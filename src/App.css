@@ -1,38 +1,130 @@
-.App {
-  text-align: center;
+@import url("https://fonts.googleapis.com/css2?family=Georama:wght@500;600;700&family=Roboto:ital,wght@0,500;0,700;0,900;1,700&display=swap");
+* {
+  box-sizing: border-box;
 }
-
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
-}
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+body {
+  background: url("./Assets/bg-img.jpg");
+  background-repeat: no-repeat;
+  width: 100vw;
+  height: 100vh;
   display: flex;
-  flex-direction: column;
-  align-items: center;
   justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+  align-items: center;
+}
+.App {
+  height: 100vh;
+  width: 100vw;
+  overflow-x: hidden;
+}
+.todo__container {
+  margin: 0 auto;
+  text-align: center;
+  max-width: 800px;
+  margin-top: 10%;
+}
+.todo__badge {
+  width: 140px;
+}
+.header__todo__container {
+  display: flex;
+  justify-content: space-between;
+  margin: 0 auto;
+  margin-bottom: 30px;
+  max-width: 650px;
+}
+.header__heading {
+  margin: 0px 10px;
+  font-family: "Georama", sans-serif;
+  font-size: 23px;
+}
+.todo__input__div {
+  width: 100%;
+  margin-bottom: 40px;
+}
+.todo__input {
+  width: 80%;
+  height: 40px;
+  border-radius: 10px;
+  border: none;
+  padding: 0px 20px;
+}
+.add__todo {
+  margin-left: -30px;
+  cursor: pointer;
+}
+.todo__item__div {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 79%;
+  margin: 0 auto;
+  box-shadow: 4px 5px 6px #b7b6b6;
+  padding: 0 30px;
+  border-radius: 10px;
+  cursor: pointer;
+  margin-top: 30px;
+  background-color: rgba(162, 0, 162, 0.148);
+}
+.todo__item__div:hover {
+  transform: translateY(-15%);
+  transition: 0.8s all ease-in-out;
+  box-shadow: 0px 5px 2px #888888;
+}
+.todo__task__name {
+  font-family: "Roboto", sans-serif;
 }
 
-.App-link {
-  color: #61dafb;
+.todo__task__edit {
+  color: rgb(12, 111, 12);
+  font-size: 18px;
+  margin-right: 20px;
 }
-
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.todo__task__del {
+  color: rgb(191, 0, 0);
+  font-size: 18px;
+}
+.todo__footer {
+  margin-top: 50px;
+}
+.toggle__edit {
+  color: rgb(12, 111, 12);
+}
+.button__remove__all {
+  background-color: rgba(162, 0, 162, 0.148);
+  width: 200px;
+  height: 40px;
+  border-radius: 5px;
+  border: none;
+  cursor: pointer;
+  box-shadow: 2px 4px 6px #7b7b7b;
+  font-size: 14px;
+  font-family: "Roboto", sans-serif;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 0 auto;
+}
+.button__remove__all > i {
+  font-size: 14px;
+  margin-left: 10px;
+}
+button:focus {
+  outline: none;
+}
+button:active {
+  outline: none;
+  background-color: rgba(196, 22, 196, 0.203);
+}
+.account__header {
+  display: flex;
+}
+.todo__item__withCheck {
+  display: flex;
+  align-items: center;
+}
+.todo__item__checkbox {
+  margin-right: 15px;
+  width: 20px;
+  height: 15px;
+  cursor: pointer;
 }
