@@ -1,38 +1,62 @@
-.App {
-  text-align: center;
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  overflow: hidden;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
-}
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+.timer {
+  max-width: 500px;
+  margin: 0 auto;
+  margin-top: 80px;
+  padding: 100px 0px;
+  height: 74vh;
   display: flex;
-  flex-direction: column;
+  flex-flow: column;
+  justify-content: space-around;
   align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+  background-color: #e2e1e1;
+  font-family: Roboto;
 }
 
-.App-link {
-  color: #61dafb;
+.timer h1 {
+  font-size: 36px;
+  margin: 30px 0px;
+  text-align: center;
+  text-transform: uppercase;
+  font-family: sans-serif;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
+.TimeDisplay {
+  font-size: 50px;
+}
+
+@media only screen and (max-width: 360px) {
+  .AllButtons {
+    display: flex;
+    flex-direction: column;
   }
-  to {
-    transform: rotate(360deg);
-  }
+}
+
+.AllButtons {
+  display: flex;
+}
+
+#Start {
+  background-color: rgb(0, 213, 0);
+  color: #ffffff;
+}
+
+#Stop {
+  background-color: rgb(253, 4, 4);
+  color: #ffffff;
+}
+
+#Reset {
+  background-color: rgb(21, 181, 189);
+  color: #ffffff;
+}
+
+.hideit {
+  visibility: hidden;
 }
